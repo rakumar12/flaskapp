@@ -34,7 +34,7 @@ def index():
     return render_template('index2.html')
 
 
-@app.route('/doc')
+@app.route('/doc' , methods=["GET", "POST"])
 def doc():
     return render_template('documentation.html')    
 
